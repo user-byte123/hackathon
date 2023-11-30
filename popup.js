@@ -51,11 +51,22 @@ switch (window.location.hostname) {
         break;
 }
 
-document.addEventListener('click',function(event) {
+document.addEventListener('click',function eventHandler(event) {
     document.body.innerHTML = "<img src=\'https://http.dog/440.jpg' width=\'900px\'>"
     const textElement = document.createElement('p')
     document.body.appendChild(textElement)
-    textElement.textContent = "Enough dogging around time to go back to studying"
+    textElement.textContent = "Enough dogging around. Time to go back to studying"
+    textElement.style.fontSize = "100px";
+    textElement.style.color = "white"
+    // must remove eventListener to add another one
+    this.removeEventListener('click', eventHandler)
+});
+
+document.body.addEventListener('click', function(event) {
+    document.body.innerHTML = "<img src=\'https://http.dog/404.jpg' width=\'900px\'>"
+    const textElement = document.createElement('p')
+    document.body.appendChild(textElement)
+    textElement.textContent = "Don't even think about disabling this extension"
     textElement.style.fontSize = "100px";
     textElement.style.color = "white"
 })
