@@ -1,0 +1,26 @@
+{   "manifest_version": 3,
+    "name": "Study Time extension",
+    "description": "This extension makes you focus and grind",
+    "version": "1.0",
+    "permissions": ["<all_urls>"],
+    "icons": {
+      "16": "/imgs/idk.png",
+      "48": "/imgs/idk.png",
+      "128": "/imgs/idk.png"
+    },
+    "action": {
+      "default_icon": {
+      "16": "/imgs/idk.png",
+      "48": "/imgs/idk.png",
+      "128": "/imgs/idk.png"
+      }
+    },
+    "content_scripts": [{
+    "matches": ["https://www.google.com/*", "https://9gag.com/*"],
+    "css":["popup.css"]
+    }, 
+    {
+     "matches": ["https://www.youtube.com/*", "https://www.netflix.com/*", "https://9gag.com/*", "https://www.instagram.com/*", "https://www.facebook.com/"],
+     "js": ["popup.js"]
+    }]
+  }
