@@ -16,11 +16,11 @@
       }
     },
     "content_scripts": [{
-    "matches": ["https://www.google.com/*", "https://9gag.com/*", "https://chat.openai.com/*"],
+    "matches": ["https://www.google.com/*", "https://chat.openai.com/*"],
     "css":["popup.css"]
     }, 
     {
-     "matches": ["https://www.youtube.com/*", "https://www.netflix.com/*", "https://9gag.com/*", "https://www.instagram.com/*", "https://www.facebook.com/"],
+     "matches": ["https://www.youtube.com/*", "https://www.netflix.com/*", "https://9gag.com/*", "https://www.instagram.com/*", "https://www.facebook.com/*"],
      "js": ["popup.js"]
     }]
   }
