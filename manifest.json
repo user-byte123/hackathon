@@ -16,7 +16,7 @@
       }
     },
     "content_scripts": [{
-    "matches": ["https://www.google.com/*", "https://chat.openai.com/*"],
+    "matches": ["https://www.google.com/*", "https://chat.openai.com/*", "https://9gag.com/*"],
     "css":["popup.css"]
     }, 
     {
